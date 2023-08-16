@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Diet Plan Assessment</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Diet Plan Assessment</h1>
+  </header>
+  
+  <main>
+    <form>
+      <h2>About You</h2>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">--Select gender--</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required>
+      
+      <label for="height">Height (in cm):</label>
+      <input type="number" id="height" name="height" required>
+      
+      <label for="weight">Weight (in kg):</label>
+      <input type="number" id="weight" name="weight" required>
+      
+      <label for="activity">Activity Level:</label>
+      <select id="activity" name="activity" required>
+        <option value="">--Select activity level--</option>
+        <option value="sedentary">Sedentary (little or no exercise)</option>
+        <option value="lightly-active">Lightly Active (light exercise 1-3 days/week)</option>
+        <option value="moderately-active">Moderately Active (moderate exercise 3-5 days/week)</option>
+        <option value="very-active">Very Active (hard exercise 6-7 days/week)</option>
+        <option value="super-active">Super Active (very hard exercise, physical job or training 2x/day)</option>
+      </select>
+      
+      <h2>Your Goals</h2>
+      <label for="goal">Weight Goal:</label>
+      <select id="goal" name="goal" required>
+        <option value="">--Select weight goal--</option>
+        <option value="maintain">Maintain Weight</option>
+        <option value="lose">Lose Weight</option>
+        <option value="gain">Gain Weight</option>
+      </select>
+      
+      <label for="target">Target Weight (in kg):</label>
+      <input type="number" id="target" name="target" required>
+      
+      <label for="duration">Duration of Goal (in weeks):</label>
+      <input type="number" id="duration" name="duration" required>
+      
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+  
+  
+</body>
+</html>
+
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2em;
+}
+
+main {
+  padding: 60px;
+  text-align: center;
+}
+
+form {
+  display: inline-block;
+  text-align: left;
+}
+
+form h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+label {
+  font-size: 1.2em;
+}
+</style>
